@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel in Taiwan</title>
+    <link rel="stylesheet" href="style.css">
+    <!--javascript-->
+    <script type="text/javascript">
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+
+  </head>
+
+  <body>  
+
+    <div id= "background">
+      <!--Menu-->
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="DiscoverTaiwan.html">Discover Taiwan</a>
+        <a href="TravelinTaiwan.html">Travel in Taiwan</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      
+<!--Title-->
+      <div class="title"><h1>Travel in <span style="color: blue">T</span>ai<span style="color: green">w</span>an</h1></div>
+        <div class="travel"><table class ="places">
+          
+<!--Must visit places table-->          
+          <thread>
+            <tr>
+              <th id="mustvisit" colspan="2"><big>Must-visit</big></th>
+            </tr>
+            <tr>
+              <colgroup id="attractions">
+                <th>Attraction</th>
+                <th>City</th>
+              </colgroup>
+            </tr>
+          </thread>  
+          <tbody> 
+            <tr><td>Taipei 101</td>
+              <td rowspan="2">Taipei</td></tr>
+            <tr><td>ShiLin Night Market</td></tr> 
+            <tr><td>Ali Mountain</td>
+              <td rowspan="2">Nantou</td></tr>  
+            <tr><td>Sun Moon Lake</td></tr>  
+            <tr><td>Taroko</td>
+              <td>Hualian</td></tr>
+            <tr><td>Luye Gaotai</td>
+              <td>Taitung</td></tr>
+          </tbody>
+          <tfoot>
+            <td id="top10" colspan="2"><a href ="https://www.insightguides.com/destinations/asia-pacific/taiwan/top-attractions">Top 10 attractions</a></td></tfoot>
+        </table></div>
+      
+      <!--Taiwan map-->
+      <div class="travel"><img src="taiwan_map.gif"></div>
+        <br><br><br><br><br>
+      
+  <!--Place Gallery-->    
+  <div class="image">
+  <fieldset><legend>Gallery</legend>
+        <div class="pic">
+        <img src ="https://upload.wikimedia.org/wikipedia/commons/0/05/Taipei_101_from_afar.jpg" width=100%; height=80%;><figcaption>Taipei 101</figcaption></div>
+        <div class="pic">
+        <img src ="shilin.jpg" width=100%; height=80%;><figcaption>Shilin Night Market</figcaption></div>
+        <div class="pic">
+        <img src ="alishan.jpg" width=100%; height=80%;>
+        <figcaption>Ali Mountain</figcaption><br></div>
+        <div class="pic">
+        <img src ="sunmoonlake.jpg" width=100%; height=80%;><figcaption>Sun Moon Lake</figcaption></div>
+        <div class="pic">
+        <img src ="taruko.jpg" width=100%; height=80%;><figcaption>Taruko</figcaption></div>
+        <div class="pic">
+        <img src ="taitung.jpg" width=100%; height=80%;><figcaption>Luye Gaotai</figcaption></div>
+        <div class="pic">
+        <img src ="Taichung.jpg" width=100%; height=80%;><figcaption>Taichung Rainbow Village</figcaption></div>
+        <div class="pic">
+        <img src ="Ilan.jpg" width=100%; height=80%;><figcaption>Ilan</figcaption></div>
+        <div class="pic">
+        <img src ="kaohsiung.jpg" width=100%; height=80%;><figcaption>Kaohsiung</figcaption></div>
+    </fieldset><br><br>
+  </div>
+</div>
+
+    
+<!--Footwrap-->  
+    <div class="footerWrap">
+      <div class="footer"><a href="http://eng.taiwan.net.tw/m1.aspx?sNo=0000247">Credits</a>  |  info  | By Chia An</div>
+    </div>
+  </body>
+</html>

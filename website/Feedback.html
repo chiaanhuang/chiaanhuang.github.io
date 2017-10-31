@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ;maximum-scale=1.0; user-scalable=0;">
+    
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!--javascript-->
+    <script type="text/javascript">
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+
+  </head>
+
+  <body>  
+
+    <div id= "background">
+      <!--Menu-->
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="DiscoverTaiwan.html">Discover Taiwan</a>
+        <a href="TravelinTaiwan.html">Travel in Taiwan</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+<!--Title-->
+      <div class="title"><h1>Feedback</h1></div>
+      
+<!--Personal information-->
+      <div class="contactus"><fieldset><legend><strong>Personal Information</strong></legend>
+        <table class="info"><tr>
+          <td>First Name:</td> 
+          <td><input name="FirstName" tabindex="0" maxlength="20" required></td></tr>
+          <tr><td>Last Nmae:</td>
+            <td><input name="LastName" tabindex="1" maxlength="20" required></td></tr>
+          <tr><td>Age:</td> 
+            <td><input type="radio" name="Age" value="under 15"><label for="under15">under 15</label>
+              <input type="radio" name="Age" value="16-21"><label for="16-21">16-21</label>
+              <input type="radio" name="Age" value="21-25"><label for="21-25">21-25</label>
+              <input type="radio" name="Age" value="above 25"><label for="above25">above 25</label></td></tr>
+          <tr><td>Gender:</td> 
+            <td><select name="Gender" tabindex="1" required>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              <option value="Others">Others</option></select></td></tr>
+          <tr><td>Date of birth:</td>
+            <td><input type="date" name="Birhtday" tabindex="4"></td></tr>
+          <tr><td>Email:</td> 
+            <td><input name="email" type="email" placeholder="1234@gmail.com" tabindex="5" required></td></tr>
+          <tr><td>Phone:</td>
+            <td><input pattern="[0-9] {10}" title="Enter your phone number without any dashes or spaces." name="phone" required></td></tr></table>
+      </fieldset><br><br>
+      
+    <!--Experience in Taiwan-->
+        <fieldset><legend><strong>Experience in Taiwan</strong></legend>
+        How many times have you been to Taiwan?<br>
+        <input type="radio" name="Frequency" value="0"><label for="0">0</label>
+        <input type="radio" name="Frequency" value="1"><label for="1">1</label>
+        <input type="radio" name="Frequency" value="2"><label for="2">2</label>
+        <input type="radio" name="Frequency" value="3+"><label for="3+">3+</label>
+        <input type="number" name="Frequency" step="4" max="9" min="4"> times<br><br>
+        How do you know about Taiwan?<br>
+        <input type="checkbox" name="How">Friends
+        <input type="checkbox" name="How">News
+        <input type="checkbox" name="How">Our website
+        <input type="checkbox" name="How">Other website
+        <input type="url" title="Share the website" pattern="https?://.+" size="28"><br><br>
+        When did you visit Tiawan?<br>
+        <input type="datetime-local"><br><br>
+        Which city did you stayed?<br>
+        <input type="checkbox" name="Places" value="Taipei">Taipei<br>
+        <input type="checkbox" name="Places" value="Taichun">Taichun<br>
+        <input type="checkbox" name="Places" value="Tainan">Tainan<br>
+        <input type="checkbox" name="Places" value="Kaohsiung">Kaohsiung<br>
+        <input type="checkbox" name="Places" value="Others">Others<br><br>
+        What did you think about Taiwan?<br>
+        Safeness:
+        <input type="radio" name="Safeness" value="10">Bad
+        <meter min="0" max="10" value="1" low="5" high="8"></meter>
+        <input type="radio" name="Safeness" value="10">Good
+        <meter min="0" max="10" value="5" low="5" high="8"></meter>
+        <input type="radio" name="Safeness" value="10">Great <meter min="0" max="10" value="10" low="5" high="8"></meter><br>
+        Cleaness:
+        <input type="radio" name="Safeness" value="10">Bad
+        <meter min="0" max="10" value="1" low="5" high="8"></meter>
+        <input type="radio" name="Safeness" value="10">Good
+        <meter min="0" max="10" value="5" low="5" high="8"></meter>
+        <input type="radio" name="Safeness" value="10">Great <meter min="0" max="10" value="10" low="5" high="8"></meter><br>
+        Fun:
+        <input type="radio" name="Safeness" value="10">Bad
+        <meter min="0" max="10" value="1" low="5" high="8"></meter>
+        <input type="radio" name="Safeness" value="10">Good
+        <meter min="0" max="10" value="5" low="5" high="8"></meter>
+        <input type="radio" name="Safeness" value="10">Great <meter min="0" max="10" value="10" low="5" high="8"></meter><br><br>
+          
+        <!--Message box-->
+        Tell us about your experience in Taiwan:<br>
+        <textarea name="experience" rows="10" cols="50" size="250" placeholder="Type your experience here."></textarea><br><br>
+        Share awesome pictures with us:<br><br>
+        <input type="file" name="ProfilePic"><br><br>
+        <!--Submit button and reset button-->
+      </fieldset><br>
+      <button type="submit" value="Submit">Submit</button>
+      <button type="reset" value="Reset">Start Over</button>
+      <input type="hidden" name="Version" value="1">
+      <br><br><br><br><br><br><br>
+      </div></div>  
+    
+  <!--Footwrap-->  
+    <div class="footerWrap">
+      <div class="footer"><a href="http://eng.taiwan.net.tw/m1.aspx?sNo=0000247">Credits</a> | By Chia An</div>
+    </div>
+  </body>
+</html>
